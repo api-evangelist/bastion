@@ -1,0 +1,17 @@
+generated: '2026-07-18'
+method: searched
+source: https://bastion.com/ ; https://status.bastion.com/ ; https://docs.bastion.com/reference
+versioning:
+  scheme: uri-path
+  current: v2
+  evidence: production API base path https://api.prod.bastion.com/v2/
+  docs: https://docs.bastion.com/reference
+status_page: https://status.bastion.com/
+deprecation: {}
+sla: {}
+notes: >-
+  Bastion exposes a public status page at status.bastion.com. The API is versioned
+  in the URI path (current major v2, base https://api.prod.bastion.com/v2/). No
+  public deprecation policy, Sunset/Deprecation header commitment, or SLA document
+  was located; the developer docs (docs.bastion.com/reference, /recipes) are
+  password-gated so any published versioning/deprecation policy could not be read.

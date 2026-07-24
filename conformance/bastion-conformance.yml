@@ -1,0 +1,36 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://bastion.com/disclosures ; https://bastion.com/subprocessor-list ;
+  https://bastion.com/ ; company regulatory disclosures
+summary: >-
+  Bastion's differentiation is regulatory conformance rather than a technical API
+  standard. Its published posture centers on US money-transmission and
+  trust-company licensing plus KYC/AML compliance-as-a-service. The public
+  developer docs are password-gated, so protocol-level standards (OAuth2/OIDC,
+  RFC 9457) could not be verified from a spec.
+standards:
+- id: nydfs-limited-purpose-trust
+  conforms: true
+  evidence: >-
+    Bastion Platforms Trust Company, LLC is chartered as a limited purpose trust
+    company by the New York State Department of Financial Services (NYDFS).
+- id: msb-registration
+  conforms: true
+  evidence: >-
+    Bastion Platforms US, LLC is a registered Money Services Business (NMLS ID
+    2523302) with broad money-transmitter-license coverage across US states.
+- id: kyc-aml-cft
+  conforms: true
+  evidence: >-
+    Bastion provides Compliance-as-a-Service handling KYC and AML/CFT for
+    stablecoin issuance, custody, and on/off-ramp flows.
+- id: oauth2
+  conforms: unknown
+  evidence: developer docs password-gated; no public OpenAPI to inspect securitySchemes
+- id: rfc9457-problem-details
+  conforms: unknown
+  evidence: no public OpenAPI/spec available to inspect error media types
+regulatory_licenses:
+- Bastion Platforms Trust Company, LLC — NYDFS limited purpose trust company
+- Bastion Platforms US, LLC — registered MSB, NMLS ID 2523302

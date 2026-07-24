@@ -1,0 +1,25 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/* on Bastion hosts
+hosts:
+- host: https://bastion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.prod.bastion.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 401
+  - path: /.well-known/oauth-authorization-server
+    status: 401
+notes: >-
+  No /.well-known discovery documents are publicly served. The apex host returns
+  404 for all probed paths; the API host (api.prod.bastion.com) returns 401
+  (authentication required) rather than serving public discovery documents. No
+  WellKnown/SecurityTxt scoring pointer is emitted because no 200 document exists.
