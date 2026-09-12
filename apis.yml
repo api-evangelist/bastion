@@ -95,6 +95,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Website
+  url: https://www.bastion.com/
 - type: VulnerabilityDisclosure
   url: security/bastion-vulnerability-disclosure.yml
 - type: Security
