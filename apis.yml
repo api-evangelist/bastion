@@ -58,8 +58,9 @@ tags:
 - Web3
 - Compliance
 - Crypto Infrastructure
-- Financial-Services
+- Financial Services
 - On/Off-Ramps
+- Stablecoin Issuance
 tags_raw:
 - Company
 - Stablecoins
@@ -71,6 +72,8 @@ tags_raw:
 - Crypto Infrastructure
 - Financial Services
 - On/Off-Ramps
+- Financial-Services
+- Stablecoin Issuance
 apis:
 - name: Bastion API
   description: >-
